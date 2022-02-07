@@ -1,0 +1,209 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/*
+Must fix up these classes to actually make sense. 
+E.g. a generic class to make content cover the central 75% of the space, while its background covers the whole width. 
+*/
+
+.background {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.content {
+    width: 75vw;
+}
+
+.header {
+    padding: 10px;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+.header > .content {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.header-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #E5E7EB;
+    font-size: 18px; 
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    padding: 48px 0;
+}
+
+/* Contains the text content on the left, and image on the right */
+.hero > .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Contains the text */
+.hero.content > div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.hero.heading {
+    color: #F9FAF8;
+    font-weight: bolder;
+    font-size: 48px;
+    padding: 0;
+    justify-content: left;
+}
+
+.hero button {
+    width: 30%;
+    padding: 10px;
+    border-style: none;
+}
+
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 10px;
+}
+
+button:active {
+    background-color: #2d67c4;
+}
+
+.hero > img {
+    width: 50%;
+    flex: 1;
+}
+
+.random-info.heading {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    padding: 32px 0;
+    text-align: center;
+}
+
+.random-info .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 64px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    flex: 1;
+}
+
+.info-photo {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #3882F6;
+    border-radius: 10px;
+}
+
+.quote-background {
+    background-color: #E5E7EB;
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-background .content {
+    width: 50vw;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.sign-up.background {
+    padding: 64px 0;
+}
+
+.sign-up .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border-radius: 5px;
+    padding: 36px 160px;
+}
+
+.join-pls {
+    font-size: 20px;
+}
+
+.blue-button {
+    padding: 8px 32px;
+    border: solid 2px #F9FAF8;
+}
+
+.footer.background {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    padding: 32px 0;
+}
+
+.footer.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
