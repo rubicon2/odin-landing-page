@@ -82,6 +82,11 @@ button:active {
     flex-direction: column;
 }
 
+.content.hero img {
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+}
+
 .content.random-info {
     flex-direction: column;
     justify-content: center;
